@@ -11,25 +11,25 @@
   // if it is snowy, print "coat"
   // if it is icy, print "yak traks"
 
-//weather = "sunny"
+weather = "sunny"
 
-//if (weather === "sunny") {
-  //console.log("sunscreen");
-//} else if (weather === "rainy") {
-  //console.log("umbrella");
-//} else if (weather === "snowy") {
+if (weather === "sunny") {
+  console.log("sunscreen");
+} else if (weather === "rainy") {
+  console.log("umbrella");
+} else if (weather === "snowy") {
   console.log("jacket");
-//} else if (weather === "icy") {
-//  console.log("yak traks");
-//} else {
-//  console.log("good to go!");
-//}
+} else if (weather === "icy") {
+  console.log("yak traks");
+} else {
+  console.log("good to go!");
+}
 
 // Experiment with manipulating the value held in variable 'weather'
 // to print something other than 'coat'
 
 
-##################
+//##################
 // Using the numQuarters variable defined below, determine
 // if you have enough money to buy a gumball. A gumball costs
 // two quarters.
