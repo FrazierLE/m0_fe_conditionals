@@ -16,31 +16,23 @@ var numberStudents = 20
 var stringTeachers = "4"
 var numberDogs = 0
 
-// EXAMPLE: log the result of the comparison: is numberTeachers greater than numberStudents?
+
+
 console.log("Is numberTeachers greater than numberStudents?", numberTeachers > numberStudents);
-// this should log: "Is numberTeachers greater than numberStudents?" false
 
-// YOU DO: log the result of the comparison: is numberTeachers less than numberStudents?
-// this should log: true
+console.log("is numberTeachers < numberStudents?", numberTeachers < numberStudents);
 
-// YOU DO: log the result of the comparison: is numberTeachers strictly equal to stringTeachers?
-// this should log: false
+console.log("is numberTeachers strictly equal to stringTeachers?", numberTeachers === numberTeachers);
 
-// YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
-// this should log: true
+console.log("is numberTeachers not equal to numberStudents?", numberTeachers === numberStudents);
 
-// YOU DO: log the result of the comparison: is numberStudents greater than or equal to 20?
-// this should log: true
+console.log("is numberStudents greater than or equal to 20?", numberStudents >= 20);
 
-// YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
-// this should log: false
+console.log("is numberStudents greater than or equal to 21?", numberStudents >= 21);
 
-// YOU DO: log the result of the comparison: is numberStudents less than or equal to 20?
-// this should log: true
+console.log("is numberStudents less than or equal to 20?", numberStudents <= 20);
 
-// YOU DO: log the result of the comparison: is numberStudents less than or equal to 21?
-// this should log: true
-
+console.log("is numberStudents less than or equal to 21?", numberStudents <= 21);
 
 // #-------------------
 // PART 2: Articulating what you are doing
@@ -51,35 +43,33 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 // Be as technically precise as possible, but don't just copy and paste a definition from the readings.
 // Make sure YOU can explain it that way!
 
+
 console.log(4 < 9);
-// YOU DO: Explain.
+// logging to see if 4 is less than 9 and the statement will be true
 
 var books = 3;
 console.log(4 < books);
-// YOU DO: Explain.
+// logging to see if books is less than 4 and the statement will say true
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
-// YOU DO: Explain.
+// logging to see if the friends value is greater than the siblings value and the statement will log true
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees != meals);
-// YOU DO: Explain.
+// I believe it should say !== with an additional = but what it would've tried to log is to see if meals and attendees are not strictly equal
 
 
 // #-------------------
 // PART 3: Logical Operators
 // #-------------------
-
 var isHungry = true;
 var finishedHomework = false;
 
-// EXAMPLE:
-// Determine if the user is hungry and has completed their homework
 console.log(isHungry && finishedHomework);
-// Determine if the user is hungry or has completed their homework
+
 console.log(isHungry || finishedHomework);
 
 var lovesToPlay = true;
@@ -87,17 +77,11 @@ var lovesDogPark = false;
 var lovesTreats = true;
 var age = 1;
 
-// YOU DO:
-// Determine if the dog loves to play and loves treats
+console.log(lovesToPlay && lovesTreats);
 
+console.log(lovesToPlay && lovesDogPark);
 
-// Determine if the dog loves to play and loves the dog park
+console.log(lovesToPlay || lovesDogPark);
 
-
-// Determine if the dog loves to play or loves the dog park
-
-
-// Determine if the dog loves to play and is a puppy
-
-// What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
+console.log(lovesToPlay && 1 <= age);
+//The statement was true because I said the age had to be less or equal to 1.
